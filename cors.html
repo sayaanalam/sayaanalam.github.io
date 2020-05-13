@@ -9,7 +9,7 @@ if (this.readyState == 4 && this.status == 200) {
 document.getElementById(“demo”).innerHTML = alert(this.responseText);
 }
 };
-xhttp.open(“GET”, “https://api.dialogflow.com/api/", true);
+xhttp.open(“GET”, “https://api.dialogflow.com/api-client/config.json", true);
 xhttp.withCredentials = true;
 xhttp.send();
 }</script></head>
