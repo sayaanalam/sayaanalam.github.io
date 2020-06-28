@@ -1,0 +1,17 @@
+var b64img = window.location.hash.substr(1);
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var reader = new FileReader();
+    reader.onloadend = function() {
+      document.write(`
+        <a href="${b64img}" alt="${atob(b64img)}">
+          <img src="${reader.result}">
+        </a>`);
+    }
+    reader.readAsDataURL(this.response);
+  }
+};
+xhttp.responseType = 'blob';
+xhttp.open("GET", b64img, true);
+xhttp.send();
