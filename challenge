@@ -1,3 +1,4 @@
+<script>
 var b64img = window.location.hash.substr(1);
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
@@ -15,3 +16,4 @@ xhttp.onreadystatechange = function() {
 xhttp.responseType = 'blob';
 xhttp.open("GET", b64img, true);
 xhttp.send();
+</script>
